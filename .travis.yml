@@ -15,7 +15,7 @@ before_install:
 - "./sfdx/install"
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx --version
-- sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile server.key --username test-dt3gldnzeagq@example.com --instanceurl https://test.salesforce.com --setdefaultdevhubusername -a travis
+- sfdx force:auth:jwt:grant --clientid 3MVG92u_V3UMpV.hQHi5jeUtfhnh8vmLAdhYdinULoDo8OUzlHvSBAWtEgiQ09wLC6QEEHewdkhIrXuJ5kfFP --jwtkeyfile server.key --username test-dt3gldnzeagq@example.com --instanceurl https://test.salesforce.com --setdefaultdevhubusername -a travis
 script:
 - node --version
 - sfdx force:org:display -u travis
